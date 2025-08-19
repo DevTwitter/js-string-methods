@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "1.1.1",
-    "@radix-ui/react-toast": "1.2.5",
     "@radix-ui/react-accordion": "1.2.2",
     "@radix-ui/react-dialog": "1.1.4",
     "@radix-ui/react-dropdown-menu": "2.1.4",
@@ -26,6 +24,7 @@
     "next-themes": "latest",
     "react": "^19",
     "react-dom": "^19",
+    "react-simple-code-editor": "^0.14.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
   },

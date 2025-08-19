@@ -7,6 +7,8 @@ import { useI18n } from "@/lib/i18n/context"
 import type { StringMethod } from "@/lib/string-methods"
 import hljs from "highlight.js"
 import "highlight.js/styles/github-dark.css"
+import Editor from 'react-simple-code-editor';
+
 
 interface CodePlaygroundProps {
   method: StringMethod
@@ -79,20 +81,19 @@ export default function CodePlayground({ method }: CodePlaygroundProps) {
         </div>
       </div>
 
-      {/* <div className="rounded-md border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 overflow-hidden"> */}
-
-        <pre className="p-4 rounded-md border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 overflow-hidden" contentEditable={true} dangerouslySetInnerHTML={{__html:hljs.highlight(code, { language: 'javascript' }).value}} onChange={(e) => setCode(hljs.highlight(code, { language: 'javascript' }).value)}/>
           
-      {/* <br />
-      <br />
-      <br /> */}
-        {/* <textarea
-          value={code}
-          onChange={(e) => setCode(hljs.highlight(e.target.value, { language: 'javascript' }).value)}
-          className="w-full min-h-[150px] p-4 font-mono text-sm bg-transparent border-none focus:outline-none resize-none"
-          spellCheck="false"
-        /> */}
-      {/* </div> */}
+          <Editor
+            className="p-4 rounded-md border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 overflow-hidden"
+            value={code}
+            onValueChange={setCode}
+            highlight={code => hljs.highlight(code, { language: 'javascript' }).value}
+            padding={10}
+            style={{
+              fontFamily: ' ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+              fontSize: 14,
+            }}
+            // textareaClassName="p-4 rounded-md border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 overflow-hidden"
+            />
 
       <div>
         <h3 className="mb-2 font-semibold text-js-600">{t.common.output}</h3>
