@@ -1,0 +1,9 @@
+.light .hljs-string{
+  color: #0300be !important;
+}
+.light .hljs-number{
+  color: #007714 !important;
+}
+.dark .hljs-number{
+  color: #00d123 !important;
+}
