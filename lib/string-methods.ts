@@ -40,15 +40,14 @@ console.log(code);`,
     result: `128512`,
   },
   {
-    name: "concat",
+    name: "at",
     type: "Instance Method",
-    category: "modification",
-    syntax: "string.concat(string2, string3, ...)",
-    example: `const str1 = "Hello";
-const str2 = " World";
-const result = str1.concat(str2, "!");
-console.log(result);`,
-    result: `Hello World!`,
+    category: "searchAndTest",
+    syntax: "string.at(index)",
+    example: `const str = "JavaScript";
+const char = str.at(-1);
+console.log(char);`,
+    result: `t`,
   },
   {
     name: "endsWith",
@@ -125,66 +124,6 @@ console.log(matches.length);`,
     result: `3`,
   },
   {
-    name: "normalize",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.normalize(form)",
-    example: `const str = "café";
-const normalized = str.normalize('NFD');
-console.log(normalized.length);`,
-    result: `5`,
-  },
-  {
-    name: "padEnd",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.padEnd(targetLength, padString)",
-    example: `const str = "Hello";
-const padded = str.padEnd(10, ".");
-console.log(padded);`,
-    result: `Hello.....`,
-  },
-  {
-    name: "padStart",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.padStart(targetLength, padString)",
-    example: `const str = "5";
-const padded = str.padStart(3, "0");
-console.log(padded);`,
-    result: `005`,
-  },
-  {
-    name: "repeat",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.repeat(count)",
-    example: `const str = "Ha";
-const repeated = str.repeat(3);
-console.log(repeated);`,
-    result: `HaHaHa`,
-  },
-  {
-    name: "replace",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.replace(searchValue, replaceValue)",
-    example: `const str = "Hello World";
-const replaced = str.replace("World", "JavaScript");
-console.log(replaced);`,
-    result: `Hello JavaScript`,
-  },
-  {
-    name: "replaceAll",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.replaceAll(searchValue, replaceValue)",
-    example: `const str = "Hello Hello";
-const replaced = str.replaceAll("Hello", "Hi");
-console.log(replaced);`,
-    result: `Hi Hi`,
-  },
-  {
     name: "search",
     type: "Instance Method",
     category: "searchAndTest",
@@ -193,245 +132,6 @@ console.log(replaced);`,
 const index = str.search(/is/);
 console.log(index);`,
     result: `11`,
-  },
-  {
-    name: "slice",
-    type: "Instance Method",
-    category: "extraction",
-    syntax: "string.slice(beginIndex, endIndex)",
-    example: `const str = "JavaScript";
-const sliced = str.slice(0, 4);
-console.log(sliced);`,
-    result: `Java`,
-  },
-  {
-    name: "split",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.split(separator, limit)",
-    example: `const str = "apple,banana,orange";
-const fruits = str.split(",");
-console.log(fruits);`,
-    result: `['apple', 'banana', 'orange']`,
-  },
-  {
-    name: "startsWith",
-    type: "Instance Method",
-    category: "searchAndTest",
-    syntax: "string.startsWith(searchString, position)",
-    example: `const str = "JavaScript";
-const starts = str.startsWith("Java");
-console.log(starts);`,
-    result: `true`,
-  },
-  {
-    name: "substring",
-    type: "Instance Method",
-    category: "extraction",
-    syntax: "string.substring(indexStart, indexEnd)",
-    example: `const str = "JavaScript";
-const sub = str.substring(0, 4);
-console.log(sub);`,
-    result: `Java`,
-  },
-  {
-    name: "substr",
-    type: "Instance Method",
-    category: "extraction",
-    syntax: "string.substr(start, length)",
-    example: `const str = "JavaScript";
-const sub = str.substr(4, 6);
-console.log(sub);`,
-    result: `Script`,
-  },
-  {
-    name: "toLowerCase",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.toLowerCase()",
-    example: `const str = "JAVASCRIPT";
-const lower = str.toLowerCase();
-console.log(lower);`,
-    result: `javascript`,
-  },
-  {
-    name: "toLocaleLowerCase",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.toLocaleLowerCase(locale)",
-    example: `const str = "JAVASCRIPT";
-const lower = str.toLocaleLowerCase();
-console.log(lower);`,
-    result: `javascript`,
-  },
-  {
-    name: "toUpperCase",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.toUpperCase()",
-    example: `const str = "javascript";
-const upper = str.toUpperCase();
-console.log(upper);`,
-    result: `JAVASCRIPT`,
-  },
-  {
-    name: "toLocaleUpperCase",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.toLocaleUpperCase(locale)",
-    example: `const str = "javascript";
-const upper = str.toLocaleUpperCase();
-console.log(upper);`,
-    result: `JAVASCRIPT`,
-  },
-  {
-    name: "toString",
-    type: "Instance Method",
-    category: "conversion",
-    syntax: "string.toString()",
-    example: `const str = new String("Hello");
-const primitive = str.toString();
-console.log(typeof primitive);`,
-    result: `string`,
-  },
-  {
-    name: "trim",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.trim()",
-    example: `const str = "  Hello World  ";
-const trimmed = str.trim();
-console.log(trimmed);`,
-    result: `Hello World`,
-  },
-  {
-    name: "trimEnd",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.trimEnd()",
-    example: `const str = "Hello World   ";
-const trimmed = str.trimEnd();
-console.log(trimmed);`,
-    result: `Hello World`,
-  },
-  {
-    name: "trimStart",
-    type: "Instance Method",
-    category: "modification",
-    syntax: "string.trimStart()",
-    example: `const str = "   Hello World";
-const trimmed = str.trimStart();
-console.log(trimmed);`,
-    result: `Hello World`,
-  },
-  {
-    name: "valueOf",
-    type: "Instance Method",
-    category: "conversion",
-    syntax: "string.valueOf()",
-    example: `const str = new String("Hello");
-const primitive = str.valueOf();
-console.log(typeof primitive);`,
-    result: `string`,
-  },
-  {
-    name: "at",
-    type: "Instance Method",
-    category: "searchAndTest",
-    syntax: "string.at(index)",
-    example: `const str = "JavaScript";
-const char = str.at(-1);
-console.log(char);`,
-    result: `t`,
-  },
-  {
-    name: "fromCharCode",
-    type: "Static Method",
-    category: "creation",
-    syntax: "String.fromCharCode(num1, num2, ...)",
-    example: `const str = String.fromCharCode(72, 101, 108, 108, 111);
-console.log(str);`,
-    result: `Hello`,
-  },
-  {
-    name: "fromCodePoint",
-    type: "Static Method",
-    category: "creation",
-    syntax: "String.fromCodePoint(num1, num2, ...)",
-    example: `const str = String.fromCodePoint(128512, 128513);
-console.log(str);`,
-    result: `😀😁`,
-  },
-  {
-    name: "raw",
-    type: "Static Method",
-    category: "creation",
-    syntax: "String.raw(template, ...substitutions)",
-    example: `const str = String.raw\`Hello\\nWorld\`;
-console.log(str);`,
-    result: `Hello\\nWorld`,
-  },
-
-  // Transform Methods
-  {
-    name: "toLowerCase",
-    type: "Instance Method",
-    category: "transform",
-    syntax: "string.toLowerCase()",
-    example: `const str = "JAVASCRIPT";
-const lower = str.toLowerCase();
-console.log(lower);`,
-    result: `javascript`,
-  },
-  {
-    name: "toUpperCase",
-    type: "Instance Method",
-    category: "transform",
-    syntax: "string.toUpperCase()",
-    example: `const str = "javascript";
-const upper = str.toUpperCase();
-console.log(upper);`,
-    result: `JAVASCRIPT`,
-  },
-  {
-    name: "trim",
-    type: "Instance Method",
-    category: "transform",
-    syntax: "string.trim()",
-    example: `const str = "  JavaScript  ";
-const trimmed = str.trim();
-console.log(\`"\${trimmed}"\`);`,
-    result: `"JavaScript"`,
-  },
-  {
-    name: "padStart",
-    type: "Instance Method",
-    category: "transform",
-    syntax: "string.padStart(targetLength, padString)",
-    example: `const str = "42";
-const padded = str.padStart(5, "0");
-console.log(padded);`,
-    result: `00042`,
-  },
-  {
-    name: "padEnd",
-    type: "Instance Method",
-    category: "transform",
-    syntax: "string.padEnd(targetLength, padString)",
-    example: `const str = "42";
-const padded = str.padEnd(5, "0");
-console.log(padded);`,
-    result: `42000`,
-  },
-  {
-    name: "repeat",
-    type: "Instance Method",
-    category: "transform",
-    syntax: "string.repeat(count)",
-    example: `const str = "JavaScript ";
-const repeated = str.repeat(3);
-console.log(repeated);`,
-    result: `JavaScript JavaScript JavaScript `,
   },
 
   // Extract Methods
@@ -465,18 +165,18 @@ const fruits = str.split(",");
 console.log(fruits);`,
     result: `["apple", "banana", "orange"]`,
   },
-
-  // Modify Methods
   {
-    name: "replace",
+    name: "substr",
     type: "Instance Method",
-    category: "modify",
-    syntax: "string.replace(regexp|substr, newSubstr|function)",
-    example: `const str = "JavaScript is cool";
-const newStr = str.replace("cool", "amazing");
-console.log(newStr);`,
-    result: `JavaScript is amazing`,
+    category: "extract",
+    syntax: "string.substr(start, length)",
+    example: `const str = "JavaScript";
+const sub = str.substr(4, 6);
+console.log(sub);`,
+    result: `Script`,
   },
+
+  // Modification / Transform
   {
     name: "concat",
     type: "Instance Method",
@@ -488,4 +188,187 @@ const result = str1.concat(" ", str2);
 console.log(result);`,
     result: `Hello World`,
   },
-]
+  {
+    name: "normalize",
+    type: "Instance Method",
+    category: "modify",
+    syntax: "string.normalize(form)",
+    example: `const str = "café";
+const normalized = str.normalize("NFD");
+console.log(normalized.length);`,
+    result: `5`,
+  },
+  {
+    name: "padEnd",
+    type: "Instance Method",
+    category: "modify",
+    syntax: "string.padEnd(targetLength, padString)",
+    example: `const str = "Hello";
+const padded = str.padEnd(10, ".");
+console.log(padded);`,
+    result: `Hello.....`,
+  },
+  {
+    name: "padStart",
+    type: "Instance Method",
+    category: "modify",
+    syntax: "string.padStart(targetLength, padString)",
+    example: `const str = "5";
+const padded = str.padStart(3, "0");
+console.log(padded);`,
+    result: `005`,
+  },
+  {
+    name: "repeat",
+    type: "Instance Method",
+    category: "modify",
+    syntax: "string.repeat(count)",
+    example: `const str = "Ha";
+const repeated = str.repeat(3);
+console.log(repeated);`,
+    result: `HaHaHa`,
+  },
+  {
+    name: "replace",
+    type: "Instance Method",
+    category: "modify",
+    syntax: "string.replace(searchValue, replaceValue)",
+    example: `const str = "Hello World";
+const replaced = str.replace("World", "JavaScript");
+console.log(replaced);`,
+    result: `Hello JavaScript`,
+  },
+  {
+    name: "replaceAll",
+    type: "Instance Method",
+    category: "modify",
+    syntax: "string.replaceAll(searchValue, replaceValue)",
+    example: `const str = "Hello Hello";
+const replaced = str.replaceAll("Hello", "Hi");
+console.log(replaced);`,
+    result: `Hi Hi`,
+  },
+
+  // Transform Methods
+  {
+    name: "toLowerCase",
+    type: "Instance Method",
+    category: "transform",
+    syntax: "string.toLowerCase()",
+    example: `const str = "JAVASCRIPT";
+const lower = str.toLowerCase();
+console.log(lower);`,
+    result: `javascript`,
+  },
+  {
+    name: "toLocaleLowerCase",
+    type: "Instance Method",
+    category: "transform",
+    syntax: "string.toLocaleLowerCase(locale)",
+    example: `const str = "JAVASCRIPT";
+const lower = str.toLocaleLowerCase();
+console.log(lower);`,
+    result: `javascript`,
+  },
+  {
+    name: "toUpperCase",
+    type: "Instance Method",
+    category: "transform",
+    syntax: "string.toUpperCase()",
+    example: `const str = "javascript";
+const upper = str.toUpperCase();
+console.log(upper);`,
+    result: `JAVASCRIPT`,
+  },
+  {
+    name: "toLocaleUpperCase",
+    type: "Instance Method",
+    category: "transform",
+    syntax: "string.toLocaleUpperCase(locale)",
+    example: `const str = "javascript";
+const upper = str.toLocaleUpperCase();
+console.log(upper);`,
+    result: `JAVASCRIPT`,
+  },
+  {
+    name: "trim",
+    type: "Instance Method",
+    category: "transform",
+    syntax: "string.trim()",
+    example: `const str = "  JavaScript  ";
+const trimmed = str.trim();
+console.log(\`"\${trimmed}"\`);`,
+    result: `"JavaScript"`,
+  },
+  {
+    name: "trimStart",
+    type: "Instance Method",
+    category: "transform",
+    syntax: "string.trimStart()",
+    example: `const str = "   Hello World";
+const trimmed = str.trimStart();
+console.log(trimmed);`,
+    result: `Hello World`,
+  },
+  {
+    name: "trimEnd",
+    type: "Instance Method",
+    category: "transform",
+    syntax: "string.trimEnd()",
+    example: `const str = "Hello World   ";
+const trimmed = str.trimEnd();
+console.log(trimmed);`,
+    result: `Hello World`,
+  },
+
+  // Conversion Methods
+  {
+    name: "toString",
+    type: "Instance Method",
+    category: "conversion",
+    syntax: "string.toString()",
+    example: `const str = new String("Hello");
+const primitive = str.toString();
+console.log(typeof primitive);`,
+    result: `string`,
+  },
+  {
+    name: "valueOf",
+    type: "Instance Method",
+    category: "conversion",
+    syntax: "string.valueOf()",
+    example: `const str = new String("Hello");
+const primitive = str.valueOf();
+console.log(typeof primitive);`,
+    result: `string`,
+  },
+
+  // Static Methods
+  {
+    name: "fromCharCode",
+    type: "Static Method",
+    category: "creation",
+    syntax: "String.fromCharCode(num1, num2, ...)",
+    example: `const str = String.fromCharCode(72, 101, 108, 108, 111);
+console.log(str);`,
+    result: `Hello`,
+  },
+  {
+    name: "fromCodePoint",
+    type: "Static Method",
+    category: "creation",
+    syntax: "String.fromCodePoint(num1, num2, ...)",
+    example: `const str = String.fromCodePoint(128512, 128513);
+console.log(str);`,
+    result: `😀😁`,
+  },
+  {
+    name: "raw",
+    type: "Static Method",
+    category: "creation",
+    syntax: "String.raw(template, ...substitutions)",
+    example: `const str = String.raw\`Hello\\nWorld\`;
+console.log(str);`,
+    result: `Hello\\nWorld`,
+  },
+];
