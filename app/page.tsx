@@ -4,6 +4,9 @@ import StringMethodsExplorer from "@/components/string-methods-explorer"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { I18nProvider, useI18n } from "@/lib/i18n/context"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { Github } from "lucide-react"
 
 function PageContent() {
   const { t } = useI18n()
@@ -19,7 +22,14 @@ function PageContent() {
             <p className="text-zinc-600 dark:text-zinc-400 mt-1">{t.header.subtitle}</p>
           </div>
           <div className="flex items-center gap-2">
-            <LanguageSwitcher />
+            {/* No Language implemented yet */}
+            {/* <LanguageSwitcher /> */}
+            {/* github button */}
+            <Button variant="outline" size="icon" asChild>
+              <Link href="https://github.com/DevTwitter/js-string-methods">
+                <Github className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
+              </Link>
+            </Button>
             <ThemeToggle />
           </div>
         </header>

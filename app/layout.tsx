@@ -26,6 +26,13 @@ export const metadata: Metadata = {
   publisher: 'DevTwitter',
   openGraph: {
     title: 'JS String Methods',
+    description: 'JS String Methods By DevTwitter',
+    authors: [{ name: 'Milad Niroee', url: 'https://github.com/miladniroee' }],
+    url: 'https://js-string-methods.vercel.app',
+    siteName: 'JS String Methods',
+    images: [
+      { url: 'favicon.png' },
+    ],
   }
 }
 
