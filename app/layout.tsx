@@ -21,17 +21,17 @@ export const metadata: Metadata = {
   title: 'JS String Methods',
   description: 'JS String Methods By DevTwitter',
   keywords: ['js', 'string', 'methods', 'devtwitter'],
-  authors: { name: 'Milad Niroee', url: 'https://github.com/miladniroee' },
+  authors: [{ name: 'Milad Niroee', url: 'https://github.com/miladniroee' }, { name: 'Iliya Farhadi', url: 'https://github.com/iliyatheace' }],
   creator: 'DevTwitter',
   publisher: 'DevTwitter',
   openGraph: {
     title: 'JS String Methods',
     description: 'JS String Methods By DevTwitter',
-    authors: [{ name: 'Milad Niroee', url: 'https://github.com/miladniroee' }],
+    authors: [{ name: 'Milad Niroee', url: 'https://github.com/miladniroee' }, { name: 'Iliya Farhadi', url: 'https://github.com/iliyatheace' }],
     url: 'https://js-string-methods.vercel.app',
     siteName: 'JS String Methods',
     images: [
-      { url: 'favicon.png' },
+      { url: 'icon.png' },
     ],
   }
 }
