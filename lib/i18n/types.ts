@@ -22,6 +22,15 @@ export interface Translation {
     creatorLink: string
     creatorLinkText: string
   }
+  relatedProjects: {
+    title: string
+    stringMethods: {
+      title: string
+      description: string
+      demoButton: string
+      githubButton: string
+    }
+  }
   playground: {
     title: string
     interactivePlayground: string

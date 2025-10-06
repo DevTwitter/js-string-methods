@@ -278,6 +278,29 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+## 🔗 Related Projects
+
+### **JavaScript String Methods Explorer**
+Check out our companion project for JavaScript string manipulation:
+
+[![JavaScript Array Methods](https://img.shields.io/badge/JavaScript-Array%20Methods-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://github.com/DevTwitter/js-array-methods)
+
+## 💖 Support DevTwitter
+
+If you find this dataset useful or enjoy the content from the DevTwitter channel, please consider supporting us:
+
+<p align="center">
+  <a href="https://hamibash.com/devtwitter">
+    <img src="https://img.shields.io/badge/Support_us_on-HamiBash-E44D26?style=for-the-badge" alt="Support on HamiBash"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://buymeacoffee.com/devtwitter">
+    <img src="https://img.shields.io/badge/Buy_me_a-Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"/>
+  </a>
+</p>
+
+Your support helps us maintain the channel and continue sharing valuable programming content with the community.
+
 ## 📞 Support
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/DevTwitter/js-string-methods/issues)

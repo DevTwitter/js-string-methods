@@ -24,6 +24,15 @@ export const en: Translation = {
     creatorLink: "https://t.me/devtwitter",
     creatorLinkText: "DevTwitter",
   },
+  relatedProjects: {
+    title: "Related Projects",
+    stringMethods: {
+      title: "JavaScript Array Methods",
+      description: "Explore 40+ JavaScript array manipulation methods with interactive examples and live code playground.",
+      demoButton: "Live Demo",
+      githubButton: "GitHub Repository",
+    },
+  },
   playground: {
     title: "String Methods",
     interactivePlayground: "Interactive Playground",
