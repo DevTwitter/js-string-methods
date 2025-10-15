@@ -132,7 +132,7 @@ export default function StringMethodsExplorer() {
           <div className="text-center mt-7">
             <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">{t.donation.description}</p>
             <div className="flex gap-3 justify-center">
-              <Button asChild variant="default" size="sm" className="bg-js-600 hover:bg-js-700 text-black dark:text-white">
+              <Button asChild variant="default" size="sm" className="bg-js-600 hover:bg-js-700 text-black">
                 <a
                   href="https://buymeacoffee.com/devtwitter"
                   target="_blank"
@@ -227,7 +227,7 @@ export default function StringMethodsExplorer() {
           <div className="text-center mt-7">
             <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">{t.donation.description}</p>
             <div className="flex gap-3 justify-center">
-              <Button asChild variant="default" size="sm" className="bg-js-600 hover:bg-js-700 text-black dark:text-white">
+              <Button asChild variant="default" size="sm" className="bg-js-600 hover:bg-js-700 text-black">
                 <a
                   href="https://buymeacoffee.com/devtwitter"
                   target="_blank"
