@@ -24,6 +24,11 @@ export const en: Translation = {
     creatorLink: "https://t.me/devtwitter",
     creatorLinkText: "DevTwitter",
   },
+  donation: {
+    description: "If you find this project helpful, please consider supporting us:",
+    buyMeCoffee: "Buy me a coffee",
+    supportOnHamiBash: "Support on HamiBash",
+  },
   relatedProjects: {
     title: "Related Projects",
     stringMethods: {

@@ -22,6 +22,11 @@ export interface Translation {
     creatorLink: string
     creatorLinkText: string
   }
+  donation: {
+    description: string
+    buyMeCoffee: string
+    supportOnHamiBash: string
+  }
   relatedProjects: {
     title: string
     stringMethods: {
